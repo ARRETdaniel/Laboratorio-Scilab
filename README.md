@@ -14,4 +14,4 @@ author: Daniel Terra Gomes
 
 
 ### Link doc:
-- [[https://docs.google.com/document/d/1AI1SpgRSWtFyzEyIi632853QLh1w9MqylhnPFuXqK_Q/edit?usp=sharing][Doc atividade]]
+- [https://docs.google.com/document/d/1AI1SpgRSWtFyzEyIi632853QLh1w9MqylhnPFuXqK_Q/edit?usp=sharing][Doc atividade]
