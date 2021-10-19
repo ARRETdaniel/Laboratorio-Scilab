@@ -13,7 +13,8 @@ fprintf(" Aluno: Daniel Terra Gomes - Campos %s\n\n", date());
 v1 = 3:10
 
 %===========
-v2 = 11:3:44
+v2 = 11:3:44 % 4. Escreva um único comando para construir um vetor formado por todos os inteiros múltiplos de 3 compreendidos entre 11 e  44
+
 %===========
 
 v3 = 1.2:0.2:2.2

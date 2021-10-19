@@ -10,6 +10,11 @@ clc; clear;
 fprintf('UENF - Ciencia da Computacao\n');
 fprintf("Aluno: Fulano de tal - Campos %s ", date());
 
+%==================
+test1 = zeros(9) % X = zeros(n) returns an n-by-n matrix of zeros.
+test2 = zeros(2,5) %  zeros(2,3) returns a 2-by-3 matrix.
+
+%=================
 
 m1 = [1 2 3; 4 5 6; 7 8 9]
 
