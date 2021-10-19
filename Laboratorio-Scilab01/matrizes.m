@@ -26,13 +26,10 @@ M =  [A B C; D A B]     %// matriz
 %=================
 
 N = 8*rand(6,6) % C = 2*ones(1,3) same as C = [2 2 2; 2 2 2]
-fprintf("N(3,4)  %f \n", N(3,4));
-fprintf("N(:, 5)  %f \n", N(:, 5));
-fprintf(" N(3,:)  %f \n", N(3,:));
-fprintf(" N(2:4, 4:6) %f \n", N(2:4, 4:6));
-%N(:, 5)
-%N(3,:)
-%N(2:4, 4:6)
+fprintf("N(3,4)  %f \n", N(3,4)); % Pega dado em (3,4)
+fprintf("N(:, 5)  %f \n", N(:, 5));% Pega coluna 5
+fprintf(" N(3,:)  %f \n", N(3,:)); % Pega linha 3
+fprintf(" N(2:4, 4:6) %f \n", N(2:4, 4:6)); % Pega (2:4, 4:6) da matriz
 
 %=================
 m1 = [1 2 3; 4 5 6; 7 8 9]
