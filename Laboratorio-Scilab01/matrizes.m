@@ -32,6 +32,33 @@ fprintf(" N(3,:)  %f \n", N(3,:)); % Pega linha 3
 fprintf(" N(2:4, 4:6) %f \n", N(2:4, 4:6)); % Pega (2:4, 4:6) da matriz
 
 %=================
+
+X = [1 2 3 4; 
+      4 5 6 7;
+      7 8 9 0]
+
+fprintf("diag(X)  %f \n", diag(X)) % diagonal da matriz X
+fprintf("diag(X,1)  %f \n", diag(X,1))% diagonal da matriz +1 X
+fprintf("diag(X,-1)  %f \n", diag(X,-1)) % diagonal da matriz -1 X
+fprintf("diag([ 5 7 9])  %f \n", diag([ 5 7 9])) % diagonal de [ 5 7 9]??
+
+%=================
+%Um sistema de equações AX = B pode ser resolvido utilizando a fórmula  X = inv(A)*B. 
+
+%Verifique a fórmula para o sistema x + 2y = 5;  2x + 3y = 8.
+
+%x + 2y = 5;
+y = 5
+x = 5-(2*y) % solved for x
+x = 10
+y = (5-x)/2 %y
+
+%2x + 3y = 8
+y = 5
+x = ((8-(3*y))/2) %solved for x
+
+%=================
+
 m1 = [1 2 3; 4 5 6; 7 8 9]
 
 m2 = [ 3 5; 6 9]
