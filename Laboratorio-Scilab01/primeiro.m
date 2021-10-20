@@ -26,7 +26,7 @@ w = [ 4 2 3; 4 5 6; 7 8 9];      %// matriz
 s = 'USP'  ;                   %// string
 
 %// Vetores23
-
+%
 
 v1 = 2:8;
 

@@ -13,7 +13,7 @@ fprintf('\n UENF-CCT-LCMAT-Ciencia da Computacao\n')
 fprintf(' Aluno: Fulano de tal\n\n')
 
 %// Atribuicao23245
-
+%
 
 x = 2;        %// SEM ponto e virgula: mostrar o resultado
 
