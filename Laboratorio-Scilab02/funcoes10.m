@@ -1,18 +1,18 @@
-// Prof. Ausberto S. Castro Vera
-// UENF-CCT-LCMAT-Ciencia da Computacao
-// Outubro 2021
-//
-// Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
-//
-// ======> Assunto:  Programacao: FUNCOES ==================
+%// Prof. Ausberto S. Castro Vera
+%// UENF-CCT-LCMAT-Ciencia da Computacao
+%// Outubro 2021
+%//
+%// Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
+%//
+%// ======> Assunto:  Programacao: FUNCOES ==================
 
 clear; clc;
-Aluno = 'Fulano de Tal' ;   /// <================  COMPLETAR !!!!
+Aluno = 'Daniel Terra Gomes' ;   %/// <================  COMPLETAR !!!!
 
 dt=getdate(); dd= ' ('+string(dt(7)) + ':'+string(dt(8))+')' ;
 mprintf('UENF - CCT - LCMAT - Ciencia da Computacao\n');
 
-//---------------------------
+%//---------------------------
 function M = media(x)
    [a, tamanho] = size(x);
    soma=0;
@@ -21,7 +21,7 @@ function M = media(x)
    end
    M = soma/tamanho;
 endfunction
-//----------------------------
+%//----------------------------
 
 function [f] =fatorial(n)
   k=int(n);
@@ -33,7 +33,7 @@ function [f] =fatorial(n)
      f=f*j;
   end;
 endfunction
-//---------------------------
+%//---------------------------
 
 A = [23 41 70 12 35 52]
 m = media(A);
@@ -46,4 +46,4 @@ f8 = fatorial(8);
 printf('\n Fatorial de 8 = %d\n', f8);
 
 printf('\n\n Aluno: %s - Campos/%d/%d/%d %s\n ', Aluno,dt(6),dt(2),dt(1),dd);
-disp ('bye...');    
+disp ('bye...');

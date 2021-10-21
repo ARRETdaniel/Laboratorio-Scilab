@@ -1,27 +1,27 @@
-// Prof. Ausberto S. Castro Vera
-// UENF-CCT-LCMAT-Ciencia da Computacao
-// Outubro 2021
-//
-// Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
-//
-// ======> Assunto:  Programacao:  IF-THEN-ELSE ================
+%// Prof. Ausberto S. Castro Vera
+%// UENF-CCT-LCMAT-Ciencia da Computacao
+%// Outubro 2021
+%//
+%// Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
+%//
+%// ======> Assunto:  Programacao:  IF-THEN-ELSE ================
 
 clc;
 mprintf("\n UENF-CCT-LCMAT-Ciencia da Computacao\n");
-printf(" Aluno: Fulano de tal - Campos %s\n\n", date());
+printf(" Aluno: Daniel Terra Gomes - Campos %s\n\n", date());
 
 i=1;
-for j = 1:3, 
+for j = 1:3,
   if i == j then
         V(i,j) = 2
-      elseif abs(i-j) == 1 then 
+      elseif abs(i-j) == 1 then
           V(i,j) = i-j
           else V(i,j) = i+j
-   end,    // do if
+   end,    %// do if
    mprintf(" V(%d,%d) = %d\n",i,j,V(i,j))
-end   // do for  
+end   %// do for
 
-//-------------------------------------------   
+%//-------------------------------------------
 valor = input('Digite um número qualquer : ');
 if  valor < 45
    a = valor + 45;

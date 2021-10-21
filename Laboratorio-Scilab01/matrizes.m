@@ -51,7 +51,7 @@ fprintf("diag([ 5 7 9])  %f \n", diag([ 5 7 9])) % diagonal de [ 5 7 9]??
 %     x + 2y = 5;
 %     x + 3y = 8.
 A =   [1 2;
-       1 3]
+       2 3]
 B =   [5 ;
        8]
 X = inv(A)*B
