@@ -15,7 +15,7 @@ test1 = zeros(5) % X = zeros(n) returns an n-by-n matrix of zeros.
 test2 = zeros(5,5) %  zeros(2,3) returns a 2-by-3 matrix.
 
 %=================
-% 9 Criar matrizes 4x3 de números inteiros:  A, B, C e D e a partir delas, criar a matriz M = [A B C; D A B]
+% 9 Criar matrizes 4x3 de nï¿½meros inteiros:  A, B, C e D e a partir delas, criar a matriz M = [A B C; D A B]
 
 A = 1*ones(4,3) % C = 2*ones(1,3) same as C = [2 2 2; 2 2 2]
 B = 2*ones(4,3) % C = 2*ones(1,3) same as C = [2 2 2; 2 2 2]
@@ -33,7 +33,7 @@ fprintf(" N(2:4, 4:6) %f \n", N(2:4, 4:6)); % Pega (2:4, 4:6) da matriz
 
 %=================
 
-X = [1 2 3 4; 
+X = [1 2 3 4;
       4 5 6 7;
       7 8 9 0]
 
@@ -43,19 +43,30 @@ fprintf("diag(X,-1)  %f \n", diag(X,-1)) % diagonal da matriz -1 X
 fprintf("diag([ 5 7 9])  %f \n", diag([ 5 7 9])) % diagonal de [ 5 7 9]??
 
 %=================
-%Um sistema de equações AX = B pode ser resolvido utilizando a fórmula  X = inv(A)*B. 
+%Um sistema de equaï¿½ï¿½es AX = B pode ser resolvido utilizando a fï¿½rmula  X = inv(A)*B.
 
-%Verifique a fórmula para o sistema x + 2y = 5;  2x + 3y = 8.
+
+
+%Verifique a fï¿½rmula para o sistema
+%     x + 2y = 5;
+%     x + 3y = 8.
+A =   [1 2;
+       1 3]
+B =   [5 ;
+       8]
+X = inv(A)*B
+X2 = A^(-1)*B
 
 %x + 2y = 5;
-y = 5
-x = 5-(2*y) % solved for x
-x = 10
-y = (5-x)/2 %y
-
+%y = -1
+%x = 5-(2*y) % solved for x
+%x = 3
+%y = (5-x)/2 %y
+%
 %2x + 3y = 8
-y = 5
-x = ((8-(3*y))/2) %solved for x
+%y = -1
+%x = ((8-(3*y))/2) %solved for x
+%https://www.youtube.com/watch?v=j5g-pl3N1uY
 
 %=================
 
