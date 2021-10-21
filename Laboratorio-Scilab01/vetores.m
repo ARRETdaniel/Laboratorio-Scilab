@@ -21,7 +21,7 @@ v3 = 1.2:0.2:2.2
 
 %===========
 
-C = 5*ones(1,3) % C = 2*ones(2,3) same as C = [2 2 2; 2 2 2]
+C = 6*ones(1,3) % C = 2*ones(2,3) same as C = [2 2 2; 2 2 2]
 W = [ C ; C.^2 ; C.^3 ; C.*10]      %// matriz
 %https://www.mathworks.com/help/matlab/ref/times.html
 
