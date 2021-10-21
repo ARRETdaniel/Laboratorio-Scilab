@@ -55,7 +55,7 @@ end;
 %%%for k = 1:0.8:5
 %%%         A(1,j) = k
 %%%         A(2,j)= 10*k
-%%%         B(k1,j)= 100*k    %// indice somente parte inteira
+%%%         B(k1,j)= 100*k    %// indice somente parte inteira 
 %%%         j=j+1.0;
 %%%end;
 %%%A
