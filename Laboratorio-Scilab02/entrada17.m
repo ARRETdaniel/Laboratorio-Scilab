@@ -9,6 +9,14 @@
 clear; clc;
 Aluno = 'Daniel Terra Gomes';
 Disciplina = 'Paradigmas de Linguagens de Programacao - CC-LCMAT-CCT-UENF';
+%// ==========================> Code start <====================================
+%--------//---------
+
+%--------//---------
+
+%--------//---------
+%-----------------
+%// ==========================>  Code end  <====================================
 b = "    ";
 
 itens=["Provas";"Praticas";"Pesquisa"];

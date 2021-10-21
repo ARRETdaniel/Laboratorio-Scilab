@@ -7,7 +7,14 @@
 %// ======> Assunto: GRAFICOS IV ==================
 clear; clc; clf();
 Aluno = 'Daniel Terra Gomes';  %// <============ Nome do aluno
+%// ==========================> Code start <====================================
+%--------//---------
 
+%--------//---------
+
+%--------//---------
+%-----------------
+%// ==========================>  Code end  <====================================
 %// propriedades da figura: NÃO alterar !!
 dt=getdate(); dd= ' ('+string(dt(7)) + ':'+string(dt(8))+')' ;
 %// propriedades da figura

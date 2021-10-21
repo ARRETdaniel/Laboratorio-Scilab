@@ -7,8 +7,19 @@
 %// ======> Assunto:  Programacao: WHILE
 
 clear; clc;
-mprintf("UENF - Ciencia da Computacao\n");
-printf(" Aluno: Daniel Terra Gomes - Campos %s\n\n", date());
+fprintf("UENF - Ciencia da Computacao\n");
+fprintf(" Aluno: Daniel Terra Gomes - Campos %s\n\n", date());
+
+%// ==========================> Code start <====================================
+%--------//---------
+
+%--------//---------
+
+%--------//---------
+%-----------------
+%// ==========================>  Code end  <====================================
+
+
 
 mm=[];
 m = 100;
@@ -30,7 +41,7 @@ end;
 
 A
 
-printf("\n SOMA de varios numeros...:\n\n");
+fprintf("\n SOMA de varios numeros...:\n\n");
 n=0;
 x=1;
 soma=0;
@@ -40,4 +51,4 @@ while (x > 0)
    n=n+1;
 end;
 
-printf("\n A soma dos %d valores ingressados  = %d\n",n-1,soma)
+fprintf("\n A soma dos %d valores ingressados  = %d\n",n-1,soma)
