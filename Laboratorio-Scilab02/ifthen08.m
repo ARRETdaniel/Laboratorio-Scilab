@@ -10,18 +10,17 @@ clc;
 fprintf("\n UENF-CCT-LCMAT-Ciencia da Computacao\n");
 fprintf(" Aluno: Daniel Terra Gomes - Campos %s\n\n", date());
 %// ==========================> Code start <====================================
+%--------//---------
 %Arquivo 08-ifthen.sce
 %Fazer um programa que diga se o número digitado é par ou ímpar. Utilize a função modulo(n,m) (Use o Help, F1 para ver a função).
-
-%--------//---------
 m=input('Digite numero para teste de par ou impar')
 if mod(m,2) == 1
+% For odd numbers, the remainder will be 1
    fprintf('\n impar\n')
 else
+%and for even, it will be 0
 fprintf('\n par\n')
 end
-% For odd numbers, the remainder will be 1
-%and for even, it will be 0
 %--------//---------
 %https://www.mathworks.com/matlabcentral/answers/264769-odd-and-even-numbers
 %--------//---------
