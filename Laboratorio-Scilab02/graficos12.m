@@ -16,8 +16,8 @@ clear; clc; clf();
 %// ==========================>  Code end  <====================================
 x = 1:0.1:50;  %//
 y = x.*cos(x);
-plot(x, y);
-
+plot(x, y, '--gs', 'LineWidth', 2);
+%https://www.mathworks.com/help/matlab/ref/plot.html
 xtitle('y = xcos(x)');   %// titulo do grafico
 
 %// propriedades da figura

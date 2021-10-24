@@ -7,15 +7,31 @@
 %// ======> Assunto:  Programacao: FUNCOES ==================
 
 clear; clc;
-Aluno = 'Daniel Terra Gomes' ;   %/// <================  COMPLETAR !!!!
+Aluno = 'Daniel Terra Gomes'   %/// <================  COMPLETAR !!!!
 %// ==========================> Code start <====================================
 %--------//---------
+function [a_n, a_n1] = fibonacci_num(n)
+a = 0
+b = 1;
+n = input('numero desejado');
+for i = 1:n-2 %term for n
+    c = a + b
+    a = b;
+    b = c;
+end
+a_n  = c% nth term
+a_n1 = a %(n-1) term
+end
 
+fibonacci_num(10)
 %--------//---------
-
+%https://www.mathworks.com/matlabcentral/answers/430515-for-loop-for-fibonacci-series
 %--------//---------
 %-----------------
 %// ==========================>  Code end  <====================================
+
+%{
+
 dt=getdate(); dd= ' ('+string(dt(7)) + ':'+string(dt(8))+')' ;
 mprintf('UENF - CCT - LCMAT - Ciencia da Computacao\n');
 
@@ -54,3 +70,5 @@ printf('\n Fatorial de 8 = %d\n', f8);
 
 printf('\n\n Aluno: %s - Campos/%d/%d/%d %s\n ', Aluno,dt(6),dt(2),dt(1),dd);
 disp ('bye...');
+
+%}

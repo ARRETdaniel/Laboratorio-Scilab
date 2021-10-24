@@ -10,13 +10,34 @@ clear; clc;
 Aluno = 'Daniel Terra Gomes';
 Disciplina = 'Paradigmas de Linguagens de Programacao - CC-LCMAT-CCT-UENF';
 %// ==========================> Code start <====================================
-%--------//---------
+username1 = 'dani'
+password1 = '123'
+attempts= 0;
 
 %--------//---------
+username = input('username','string');%get(handles.usrbox,'string');
+password = input('numero password','string');%get(handles.psswrdbox, 'string');
+attempts = attempts + 1;
+if strcmpi(username, username1)&&strcmpi(password,password1)
+   disp('entrou\n')
+   fprintf('cadastro foi finalizado com sucesso.\n')
+else % attempts == 3
+   disp('nah')
+   fprintf('cadastro foi finalizado, dados incorreta.\n')
+end
 
+fprintf('login terminou \n.')
+%--------//---------
+
+%https://www.mathworks.com/matlabcentral/answers/467081-not-equal-to-in-matlab
+%https://www.mathworks.com/matlabcentral/answers/74925-while-loop-in-matlab-password-gui
 %--------//---------
 %-----------------
 %// ==========================>  Code end  <====================================
+
+
+%{
+
 b = "    ";
 
 itens=["Provas";"Praticas";"Pesquisa"];
@@ -30,3 +51,5 @@ if media > 5 then
 end
 
 messagebox([Disciplina;'A MEDIA FINAL é: '+string(media); b; mensagem], "UENF - "+Aluno);
+
+%}
