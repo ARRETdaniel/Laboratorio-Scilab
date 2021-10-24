@@ -21,7 +21,7 @@ attempts = attempts + 1;
 if strcmpi(username, username1)&&strcmpi(password,password1)
    disp('entrou\n')
    fprintf('cadastro foi finalizado com sucesso.\n')
-else % attempts == 3
+elseif not(strcmpi(username, username1) && strcmpi(password,password1)) % attempts == 3
    disp('nah')
    fprintf('cadastro foi finalizado, dados incorreta.\n')
 end
