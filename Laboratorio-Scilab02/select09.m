@@ -19,8 +19,18 @@ num = input("type a number")
 num1 = input("type another number")
 options = input("options type 1 , 2 , 3 , 4")
 
-select options
-
+switch options
+    case 1
+        result =   num+num1
+    case 2
+        result =   num-num1
+    case 3
+        result =   num*num1
+    case 4
+        result =   num/num1
+    otherwise
+      warning('Unexpected type. No case created.')
+end
 
 %--------//---------
 
