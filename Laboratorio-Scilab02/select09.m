@@ -10,16 +10,25 @@ clear; clc;
 
 Aluno = 'Daniel Terra Gomes' ;   %/// <================  COMPLETAR !!!!
 
-dt=getdate(); dd= ' ('+string(dt(7)) + ':'+string(dt(8))+')' ;
-mprintf("\n UENF-CCT-LCMAT-Ciencia da Computacao\n");
+fprintf("\n UENF-CCT-LCMAT-Ciencia da Computacao\n");
 %// ==========================> Code start <====================================
 %--------//---------
+%Escreva um programa menu.sci que realize uma operação de soma, produto, divisão ou subtração de dois números,
+% dependendo da opção digitada
+num = input("type a number")
+num1 = input("type another number")
+options = input("options type 1 , 2 , 3 , 4")
+
+select options
+
 
 %--------//---------
 
 %--------//---------
 %-----------------
 %// ==========================>  Code end  <====================================
+
+%{
 
 dia = 5;
 printf('\n\n');
@@ -45,3 +54,5 @@ while (dia > 0 & dia < 7)
 end ;    %//  while
 printf('\n\n Aluno: %s - Campos/%d/%d/%d %s\n ', Aluno,dt(6),dt(2),dt(1),dd);
 disp ('bye...');
+
+}%

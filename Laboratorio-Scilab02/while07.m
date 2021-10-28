@@ -12,14 +12,22 @@ fprintf(" Aluno: Daniel Terra Gomes - Campos %s\n\n", date());
 
 %// ==========================> Code start <====================================
 %--------//---------
+K = input("type limit")
+sum = 1;
+N = 0;
+while (sum <= K)
+   sum = sum + N;
+   N = N + 1;
+end
 
+fprintf("menor value %f \n", N-1);
 %--------//---------
 
 %--------//---------
 %-----------------
 %// ==========================>  Code end  <====================================
 
-
+%{
 
 mm=[];
 m = 100;
@@ -52,3 +60,5 @@ while (x > 0)
 end;
 
 fprintf("\n A soma dos %d valores ingressados  = %d\n",n-1,soma)
+
+}%
