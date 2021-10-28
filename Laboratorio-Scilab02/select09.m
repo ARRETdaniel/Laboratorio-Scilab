@@ -8,16 +8,16 @@
 
 clear; clc;
 
-Aluno = 'Daniel Terra Gomes' ;   %/// <================  COMPLETAR !!!!
+Aluno = ('Daniel Terra Gomes\n') ;   %/// <================  COMPLETAR !!!!
 
-fprintf("\n UENF-CCT-LCMAT-Ciencia da Computacao\n");
+fprintf(" UENF-CCT-LCMAT-Ciencia da Computacao %s \n", Aluno);
 %// ==========================> Code start <====================================
 %--------//---------
 %Escreva um programa menu.sci que realize uma operação de soma, produto, divisão ou subtração de dois números,
 % dependendo da opção digitada
-num = input("type a number")
-num1 = input("type another number")
-options = input("options type 1 , 2 , 3 , 4")
+num = input("type a number\n")
+num1 = input("type another number\n")
+options = input("options type 1 , 2 , 3 , 4\n")
 
 switch options
     case 1
@@ -29,9 +29,10 @@ switch options
     case 4
         result =   num/num1
     otherwise
-      warning('Unexpected type. No case created.')
+      warning('Unexpected type. No case created.\n')
 end
-
+%https://www.mathworks.com/help/matlab/ref/switch.html
+%https://www.mathworks.com/matlabcentral/answers/5718-use-of-break-in-switch-statement
 %--------//---------
 
 %--------//---------
