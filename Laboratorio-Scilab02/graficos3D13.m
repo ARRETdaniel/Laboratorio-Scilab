@@ -6,7 +6,7 @@
 %//
 %// ======> Assunto:  Programacao: GRAFICOS III ==================
 clear; clc; clf();
-Aluno = 'Daniel Terra Gomes';  %// <============ Nome do aluno
+Aluno = ('Daniel Terra Gomes');  %// <============ Nome do aluno
 %// ==========================> Code start <====================================
 %--------//---------
 
@@ -16,22 +16,23 @@ Aluno = 'Daniel Terra Gomes';  %// <============ Nome do aluno
 %-----------------
 %// ==========================>  Code end  <====================================
 %// propriedades da figura: NÃO alterar !!
-dt=getdate(); dd= ' ('+string(dt(7)) + ':'+string(dt(8))+')' ;
+%dt=getdate(); dd= ' ('+string(dt(7)) + ':'+string(dt(8))+')' ;
 
 
 
 %// propriedades da figura
-f=gcf();
-f.figure_name='UENF CCT LCMAT CC - 2021 - '+ Aluno + dd;
+%f=gcf();
+%f.figure_name='UENF CCT LCMAT CC - 2021 - '+ Aluno + date();
+%f.figure_name='UENF - Paradigmas Scilab - 2021  - Daniel Terra Gomes';
 
 
-h=get("hdl");
+%h=get("hdl");
 
-x = 0:0.1:2*%pi;    %// mudar o intervalo para  0.01, 0.2
-y = 0:0.1:2*%pi;    %//            "
+x = 0:0.1:2*rem(pi);    %// mudar o intervalo para  0.01, 0.2
+y = 0:0.1:2*rem(pi);    %//            "
 z = sin(x')*cos(y);
 
-plot3d(x,y, z);     %// graficos 3D
+plot(x,y, z, '--gs', 'LineWidth', 2);     %// graficos 3D
 
 
 f=get("current_figure");         %// get the handle of the parent figure

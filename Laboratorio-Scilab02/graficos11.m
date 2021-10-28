@@ -27,7 +27,7 @@ da.title.text="Titulo do Grafico: y = 7sen(x) + sen(7x)";
 da.x_label.text="Eixo X";
 da.y_label.text="valor de y = f(x) ";
 
-x = -%pi:0.1:%pi;  %// Desde -Pi ate Pi com intervalo de 0.1
+x = -pi:0.1:pi;  %// Desde -Pi ate Pi com intervalo de 0.1
 f = 7*sin(x) + sin(7.*x);
 plot(x,f)
 
