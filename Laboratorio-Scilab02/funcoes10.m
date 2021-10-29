@@ -13,7 +13,6 @@ Aluno = 'Daniel Terra Gomes'   %/// <================  COMPLETAR !!!!
 function [a_n, a_n1] = fibonacci_num(n)
 a = 0
 b = 1;
-n = input('numero desejado');
 for i = 1:n-2 %term for n
     c = a + b
     a = b;

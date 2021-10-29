@@ -11,13 +11,15 @@ fprintf("UENF - Ciencia da Computacao\n");
 fprintf(" Aluno: Daniel Terra Gomes- Campos %s\n", date());
 
 %// ==========================> Code start <====================================
+
+
 %--------//---------
 % 2 Escreva um programa que calcule a soma de N n�meros inteiros consecutivos a partir
 %do n�mero X. Ambos, X e N, devem ser lidos do teclado.
 N = input(" N nmeros inteiros consecutivos? : ")
 X = input("  a partir do n�mero X? : ")
-N = 50
-X = 41
+N = 50;
+X = 41;
 A = X:N;
 total = sum(A)
 %https://www.mathworks.com/help/matlab/ref/sum.html

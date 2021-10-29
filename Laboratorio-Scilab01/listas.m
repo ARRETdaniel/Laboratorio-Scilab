@@ -5,7 +5,7 @@
 %// Para executar desde o editor SciNotes:   < Ctrl >< E >
 %//
 %// ======> Assunto: Listas ==================
-
+%
 clc; clear;
 fprintf("UENF - Ciencia da Computacao\n");
 fprintf(" Aluno: Daniel Terra Gomes - Campos %s \n", date());
@@ -13,12 +13,12 @@ fprintf(" Aluno: Daniel Terra Gomes - Campos %s \n", date());
 A={[1;3;6], [2;4], 3}
 %================================================================
 list = 'abcd' , 'xyzw'
-list1 = (['abcd' , 'xyzw']) %You can store multiple pieces of text in a string 
+list1 = (['abcd' , 'xyzw']) %You can store multiple pieces of text in a string
 %array. Each element of the array can contain a string having a different number of
 % characters, without padding.
 %str = ["Mercury","Gemini","Apollo";
 %"Skylab","Skylab B","ISS"]
-%Create a string array containing multiple strings using the [] 
+%Create a string array containing multiple strings using the []
 %operator. str is a 2-by-3 string array that contains six strings.
 %https://www.mathworks.com/help/matlab/matlab_prog/create-string-arrays.html
 %================================================================
