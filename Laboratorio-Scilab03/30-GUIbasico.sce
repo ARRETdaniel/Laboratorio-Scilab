@@ -1,7 +1,14 @@
-// Prof. Ausberto S. Castro Vera
-// UENF-CCT-LCMAT-Ciencia da Computacao
-// Outubro 2021
-//
+// %--------------------------------------------------%
+// % UENF-CCT-LCMAT-CC                                %
+// % Disciplina:   Paradigmas de Ling. de Programacao %
+// % Prof.:        Ausberto S. Castro Vera            %
+// % Date:         02/set/2021                        %
+// % Aluno:        Daniel Terra Gomes                 %
+// % Arquivo:                      %
+// %--------------------------------------------------%
+
+clear; clc;
+Aluno = 'Daniel Terra Gomes';
 // Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
 //
 // ======> Assunto:  GUI   Graphic User Interface
@@ -9,8 +16,6 @@
 //   uicontrol : cria um objeto GUI dentro de uma janela grafica, com varias propriedades
 //    callback : executa uma instrução do Scilab (uma função, um comando, etc)
 
-clear; clc;
-Aluno = 'Prof. Ausberto Castro';
 //------------------------- JANELA Principal ----------------------------------
 //  Cria uma janela grafica: Comando "figure"
 h = figure('position', [150 150 600 600], ...    // [ x y larguraJanela alturaJanela]
@@ -23,7 +28,7 @@ toolbar(h.figure_id,'off');
 	// ------------------
 	// Passo : Menu da janela Principal
 	// ------------------
-	
+
 	// Remove menus originais do Scilab
 	delmenu(h.figure_id,gettext("&File"));
 	delmenu(h.figure_id,gettext("&Tools"));
@@ -34,10 +39,10 @@ toolbar(h.figure_id,'off');
 	// Novas opcoes de menu
 	hop1 = uimenu("parent",h, "label",gettext("Arquivo"));
 	hop2 = uimenu("parent",h, "label",gettext("Sobre"));
-	
+
 	// Menu: Arquivo (remover janela grafica)
 	uimenu("parent",hop1, "label",gettext("Fechar"), "callback", "close(h)");
-	
+
 	// Menu: Sobre
 	uimenu("parent",hop2, "label",gettext("Autor da Interface"), "callback","ASCV_Sobre();");
 	// Sleep to guarantee a better display (avoiding to see a sequential display)
@@ -68,12 +73,3 @@ T = uicontrol(h, "Position", [200 20 250 30], ...
     "FontWeight", "bold", ...
     "FontSize", 20, ...
     "Callback", "close(h)");
-
-
-
-
-
-
-
-
-

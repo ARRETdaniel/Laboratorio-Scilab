@@ -1,17 +1,22 @@
-// Prof. Ausberto S. Castro Vera
-// UENF-CCT-LCMAT-Ciencia da Computacao
-// Outubro 2021 
-//
+// %--------------------------------------------------%
+// % UENF-CCT-LCMAT-CC                                %
+// % Disciplina:   Paradigmas de Ling. de Programacao %
+// % Prof.:        Ausberto S. Castro Vera            %
+// % Date:         02/set/2021                        %
+// % Aluno:        Daniel Terra Gomes                 %
+// % Arquivo:                      %
+// %--------------------------------------------------%
+
+clear; clc;
+Aluno = 'Daniel Terra Gomes';
 // Adaptado de:    http://fileexchange.scilab.org/toolboxes/132000
 //                 Version 1.0
 //                 Author(s) Jean-Luc GOUDIER
-//                 5th of March 2011 
+//                 5th of March 2011
 //
 // Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
 //
 // ======> Assunto:  GUI   UIControl
-clear; clc;
-Aluno = 'Fulano de Tal';
 //------------------------------------------------------------
 
 function ASCV_Sobre()
@@ -51,34 +56,34 @@ hd1=uicontrol('Parent',h0,'style','pushbutton','string'," Função:",...
 Equation=" Y = ";
 he=uicontrol('Parent',h0,'style','text','string',Equation,'Position',[70,460,320,30],'FontWeight','bold','FontSize',15);
 
-//----------------------- Coeficiente A -------------              
+//----------------------- Coeficiente A -------------
 h1t=uicontrol('Parent',h0,'style','text','string'," Coeficiente A",'Position',[20,430,70,20]);
 h1=uicontrol('Parent',h0,'style','slider','MIN',-50,'Max',50,'Position',[20,410,420,20],...
               'callback',"graphe");
 h1r=uicontrol('Parent',h0,'style','pushbutton','string',"Reset",'callback',"R_A",'Position',[380,430,60,20]);
 h1v=uicontrol('Parent',h0,'style','text','string'," "+string(h1.value),'Position',[210,430,35,20],'FontWeight','bold','FontSize',15);
 
-//----------------------- Coeficiente B -------------     
+//----------------------- Coeficiente B -------------
 h2t=uicontrol('Parent',h0,'style','text','string'," Coeficiente B",'Position',[20,370,70,20]);
 h2=uicontrol('Parent',h0,'style','slider','MIN',-50,'Max',50,'Position',[20,350,420,20],...
               'callback',"graphe");
 h2r=uicontrol('Parent',h0,'style','pushbutton','string',"Reset",'callback',"R_B",'Position',[380,370,60,20]);
 h2v=uicontrol('Parent',h0,'style','text','string'," "+string(h2.value),'Position',[210,370,35,20],'FontWeight','bold','FontSize',15);
 
-//----------------------- Coeficiente C -------------    
+//----------------------- Coeficiente C -------------
 h3t=uicontrol('Parent',h0,'style','text','string'," Coeficiente C",'Position',[20,310,70,20]);
 h3=uicontrol('Parent',h0,'style','slider','MIN',-50,'Max',50,'Position',[20,290,420,20],...
-              'callback',"graphe"); 
+              'callback',"graphe");
 h3r=uicontrol('Parent',h0,'style','pushbutton','string',"Reset",'callback',"R_C",'Position',[380,310,60,20]);
 h3v=uicontrol('Parent',h0,'style','text','string'," "+string(h3.value),'Position',[210,310,35,20],'FontWeight','bold','FontSize',15);
 
-//----------------------- Coeficiente D -------------     
+//----------------------- Coeficiente D -------------
 h4t=uicontrol('Parent',h0,'style','text','string'," Coeficiente D",'Position',[20,250,70,20]);
 h4=uicontrol('Parent',h0,'style','slider','MIN',-50,'Max',50,'Position',[20,230,420,20],...
               'callback',"graphe");
 h4r=uicontrol('Parent',h0,'style','pushbutton','string',"Reset",'callback',"R_D",'Position',[380,250,60,20]);
 h4v=uicontrol('Parent',h0,'style','text','string'," "+string(h4.value),'Position',[210,250,35,20],'FontWeight','bold','FontSize',15);
-//---------------------------------------------------    
+//---------------------------------------------------
 
 hd2=uicontrol('Parent',h0,'style','pushbutton','string'," Gráfico da Derivada",...
                        'callback',"deriv",'Position',[20,150,150,20], 'backgroundcolor', [1 1 0]);
@@ -86,10 +91,10 @@ hd2=uicontrol('Parent',h0,'style','pushbutton','string'," Gráfico da Derivada",
 EquationDer=" Y'' = ";
 hder=uicontrol('Parent',h0,'style','text','string',EquationDer,'Position',[70,110,320,30],'FontWeight','bold','FontSize',15);
 
-//---------------------------------------------------  
+//---------------------------------------------------
 
 
-//---------------------------------------------------  
+//---------------------------------------------------
 
 hg=figure();
 hg.figure_name = "Grafico de uma função de Terceiro Grau";
@@ -107,7 +112,7 @@ function graphe;
   set(h1v,'string'," "+string(h1.value));
   set(h2v,'string'," "+string(h2.value));
   set(h3v,'string'," "+string(h3.value));
-  set(h4v,'string'," "+string(h4.value));  
+  set(h4v,'string'," "+string(h4.value));
   clf;
 
 x=-4:0.01:4;y=myf(h1.value,h2.value,h3.value,h4.value,x);
@@ -126,7 +131,7 @@ h1v.string  =" "+string(h1.value);
   else;
     eq1=string(h1.value)+"x3 "
   end;
-  
+
   eq2=h2.value;
   if h2.value==0;
     eq2="";
@@ -135,7 +140,7 @@ h1v.string  =" "+string(h1.value);
     eq2=string(h2.value)+"x2 ";
     else;
     eq2="+"+string(h2.value)+"x2 ";
-    end;  
+    end;
   end;
 
   eq3=h3.value;
@@ -146,7 +151,7 @@ h1v.string  =" "+string(h1.value);
     eq3=string(h3.value)+"x ";
     else;
     eq3="+"+string(h3.value)+"x ";
-    end;  
+    end;
   end;
 
   eq4=h4.value;
@@ -157,7 +162,7 @@ h1v.string  =" "+string(h1.value);
     eq4=string(h4.value);
     else;
     eq4="+"+string(h4.value);
-    end;  
+    end;
   end;
 
 eq=" y = "+eq1+eq2+eq3+eq4;set(he,'string',eq);
@@ -184,19 +189,17 @@ function R_A    // Reset dos coefficientes  valor = ZERO
   graphe;
 endfunction;
 
-function R_B   
+function R_B
   set(h2,'value',0);
   graphe;
 endfunction;
 
-function R_C    
+function R_C
   set(h3,'value',0);
   graphe;
 endfunction;
 
-function R_D    
+function R_D
   set(h4,'value',0);
   graphe;
 endfunction;
-
-

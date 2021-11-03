@@ -1,12 +1,17 @@
-// Prof. Ausberto S. Castro Vera
-// UENF-CCT-LCMAT-Ciencia da Computacao
-// Outubro 2021 
+// %--------------------------------------------------%
+// % UENF-CCT-LCMAT-CC                                %
+// % Disciplina:   Paradigmas de Ling. de Programacao %
+// % Prof.:        Ausberto S. Castro Vera            %
+// % Date:         02/set/2021                        %
+// % Aluno:        Daniel Terra Gomes                 %
+// % Arquivo:                      %
+// %--------------------------------------------------%
+
+clear; clc;
+Aluno = 'Daniel Terra Gomes';
 // Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
 //
 // ======> Assunto: SINAIS   =============================
-
-clear; clc;
-Aluno = 'Prof. Ausberto Castro' ;
 
 
 function ASCV_Sobre()
@@ -47,10 +52,10 @@ h1.position =[200 200 630 600];
 	// Novas opcoes de menu
 	hop1 = uimenu("parent",h1, "label",gettext("Arquivo"));
 	hop2 = uimenu("parent",h1, "label",gettext("Sobre"));
-	
+
 	// Menu: Arquivo (remover janela grafica)
 	uimenu("parent",hop1, "label",gettext("Fechar"), "callback", "close(h1)");
-	
+
 	// Menu: Sobre
 	uimenu("parent",hop2, "label",gettext("Autor da Interface"), "callback","ASCV_Sobre();");
 	// Sleep to guarantee a better display (avoiding to see a sequential display)
@@ -93,7 +98,3 @@ xtitle('SINAL A + B : (4/Pi)[sin(2*Pi*f*t) + (1/3)*sin(2*Pi*f*t)]');
 
 
 disp('Execução terminada...!')    //  mensagem para a janela de comandos!!!
-
-
-
-

@@ -1,14 +1,19 @@
-// Prof. Ausberto S. Castro Vera
-// UENF-CCT-LCMAT-Ciencia da Computacao
-// Outubro 2021 
-//
+// %--------------------------------------------------%
+// % UENF-CCT-LCMAT-CC                                %
+// % Disciplina:   Paradigmas de Ling. de Programacao %
+// % Prof.:        Ausberto S. Castro Vera            %
+// % Date:         02/set/2021                        %
+// % Aluno:        Daniel Terra Gomes                 %
+// % Arquivo:                      %
+// %--------------------------------------------------%
+
+clear; clc;
+Aluno = 'Daniel Terra Gomes';
 // Para executar desde o editor SciNotes:   < Ctrl ><Shift>< E >
 //
 // ======> Assunto:  Equacoes (Aplicacoes) ==================
 //          Resultados: Na console
 
-clear; clc;
-Aluno = 'Fulano de Tal' ;   /// <================  COMPLETAR !!!!
 
 dt=getdate(); dd= ' ('+string(dt(7)) + ':'+string(dt(8))+')' ;
 mprintf(' UENF - Ciencia da Computacao\n');
@@ -42,5 +47,3 @@ end;
 printf('\n Sistema: \n  (%.2f)X + (%.2f)Y = %.2f \n', A, B, C);
 printf('  (%.2f)X + (%.2f)Y = %.2f \n', D, E, F);
 printf('Solução do Sistema:  X = %.1f    Y = %.1f ', solucao(1), solucao(2));
-
-
