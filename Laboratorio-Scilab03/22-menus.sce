@@ -13,17 +13,32 @@ Aluno = 'Daniel Terra Gomes';
 //
 // ======> Assunto: Programacao: GUI - Menus Interativos ==================
 
+//discip = ['Paradigmas de Linguagens','Engenharia de Software','Computação Gráfica','Redes sem Fio'];
+//   dia = ['Segunda-feira','Quarta-feira','Quinta-feira'];
+// turno = ['Manha','Tarde', 'Noite','Integral'];
+//
+//L1=list('Disciplina',1, discip); //titulo, Numero opção default, lista-opcoes
+//L2=list('Dia',1, dia);
+//L3=list('Horario',1,turno);
+//
+//OpMatr=x_choices([Aluno;' Escolha UMA disciplina para matricular:'],list(L1,L2,L3));
+//
+//messagebox([Aluno+', você escolheu como matricula : '; '  ';
+//'Disciplina : ' + string(discip(OpMatr(1)));
+//'         Dia : '+ string(dia(OpMatr(2)));
+//'      Turno : '+ string(turno(OpMatr(3)))]);
+//
+
 discip = ['Paradigmas de Linguagens','Engenharia de Software','Computação Gráfica','Redes sem Fio'];
-   dia = ['Segunda-feira','Quarta-feira','Quinta-feira'];
- turno = ['Manha','Tarde', 'Noite'];
+   dia = ['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Jaden Tag', 'Wochenende'];
+ turno = ['Morgen','Nachmittag', 'Abend'];
 
 L1=list('Disciplina',1, discip); //titulo, Numero opção default, lista-opcoes
-L2=list('Dia',1, dia);
-L3=list('Horario',1,turno);
+L2=list('Tag',1, dia);
+L3=list('Tageszeit',1,turno);
 
-OpMatr=x_choices([Aluno;' Escolha UMA disciplina para matricular:'],list(L1,L2,L3));
+OpMatr=x_choices([Aluno;' Wählen Sie den Tag zum Trainieren:'],list(L2,L3));
 
-messagebox([Aluno+', você escolheu como matricula : '; '  ';
-'Disciplina : ' + string(discip(OpMatr(1)));
+messagebox([Aluno+', Horario academia : '; '  ';
 '         Dia : '+ string(dia(OpMatr(2)));
 '      Turno : '+ string(turno(OpMatr(3)))]);

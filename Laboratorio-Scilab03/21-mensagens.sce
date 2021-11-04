@@ -14,9 +14,13 @@ Aluno = 'Daniel Terra Gomes';
 
 
 r = messagebox([Aluno+', voce esta com Notas muito baixas...'; ' ';
-             'Precisa de outra prova?'], "Prof. Ausberto Castro - UENF", "info",["Não","Sim"], "modal");
+             'Precisa de outra prova?'], "Prof. Ausberto Castro - UENF", "info",["Sim","Não","Deixar turma"], "modal");
 
-if r ==2 then
+if r == 2 then
   messagebox('A Prova de RECUPERAÇÃO é no próximo Domingo', "Mensagem do Professor");
-  else messagebox('Que pena!, '+Aluno+' ... a gente queria ajudar!', "Mensagem do Professor");
+    else if r == 1 then
+     messagebox('Que pena!, '+Aluno+' ... a gente queria ajudar!', "Mensagem do Professor");
+           else
+            messagebox('Okay!, '+Aluno+' ... Tchuus!', "Mensagem do Professor");
+         end;
 end;

@@ -25,22 +25,33 @@ h = figure('position', [150 150 600 600], ...
 
 //----------------- Funcao -----------------------------------
 function graficar3d()
-   delete(gca());  // limpa a janela gráfica
-   x = 0:0.1:2*%pi;    // Se quiser, pode mudar o incremento para  0.01
-   y = 0:0.1:2*%pi;    //            "
-   z = sin(x')*cos(y);
-   plot3d(x,y, z);  // figura 3D
-   xtitle('Gráfico TriDimensional');   // titulo do grafico
+da1=gca();
+	da1.title.font_size = 4;
+da1.title.font_foreground = 1;    // 5=vermelho
+da1.title.text="Gerne Geschehen ";
+da1.x_location='middle';
+endfunction;
+
+function grafico0()
+   delete(gca()); // limpa a janela gráfica
+   x = -2:1:2;    // Se quiser, pode mudar o incremento para  0.01
+	 y2 = cos(x);
+   plot(x,y2);;  // figura 2D
+   xtitle('grafico0');   // titulo do grafico
    telaUsada =1;
 endfunction;
 
-function graficar2d()
+function grafico()
    delete(gca()); // limpa a janela gráfica
-   a = 0:0.1:2*%pi;    // Se quiser, pode mudar o incremento para  0.01
-   plot(a,cos(a),a,sin(a));  // figura 2D
-   xtitle('Gráfico Bidimensional');   // titulo do grafico
+   x = -2:1:4;
+	 y1 = sin(x)*4;
+	 y2 = cos(x);
+
+	 plot(x,y1,'r');
+   xtitle('y1 = sin(x)*2 y2 = cos(x)');   // titulo do grafico
    telaUsada =1;
 endfunction;
+
 //------------------------------------------------------------
 function ASCV_Sobre()
 	msg = msprintf(gettext(" Interface desenvolvida na UENF (CCT - LCMAT - CC)"...
@@ -72,7 +83,8 @@ toolbar(h.figure_id,'off');
 	// Menu: Arquivo (remover janela grafica)
 	uimenu("parent",hop1, "label",gettext("Fechar"), "callback", "close(h)");
 	// Menu: Graficos
-	uimenu("parent",hop2, "label",gettext("Graficos 3D"), "callback", "graficar3d()");
-	uimenu("parent",hop2, "label",gettext("Graficos 2D"), "callback", "graficar2d()");
+	uimenu("parent",hop2, "label",gettext("Gerne Geschehen"), "callback", "graficar3d()");
+	uimenu("parent",hop2, "label",gettext("grafico0"), "callback", "grafico0()");
+	uimenu("parent",hop2, "label",gettext("Grafico"), "callback", "grafico()");
 	// Menu: Sobre
 	uimenu("parent",hop3, "label",gettext("Autor da Interface"), "callback","ASCV_Sobre();");
